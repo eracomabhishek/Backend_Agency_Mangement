@@ -57,6 +57,8 @@ exports.pagination = async (req, res) => {
         }))
     );
 
+    // console.log("aggg",vehicles)
+  
     // Apply filters
     if (agencyName) {
         vehicles = vehicles.filter((vehicle) =>

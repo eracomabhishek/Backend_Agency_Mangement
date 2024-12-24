@@ -1,10 +1,11 @@
 const express = require("express");
 const app = express();
+require('./config/connection')
 const cors = require("cors");
 const bodyParser = require("body-parser");
 
-const dbConnect = require("./config/connection");
-dbConnect();
+// const dbConnect = require("./config/connection");
+// dbConnect();
 
 app.use(express.json());
 app.use(bodyParser.json());
